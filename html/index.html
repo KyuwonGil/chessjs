@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chess Game</title>
+        <meta charset="UTF-8">
+    </head>
+    <script src="../js/chess.js"></script>
+    <script>
+        const chess = new Chess();
+        window.onload = () => {
+            document.body.appendChild(chess.createChessBoard([
+                [new WhiteBlock(new Rook(1)), new BlackBlock(new Knight(1)), new WhiteBlock(new Bishop(1)), new BlackBlock(new Queen(1)), new WhiteBlock(new King(1)), new BlackBlock(new Bishop(1)), new WhiteBlock(new Knight(1)), new BlackBlock(new Rook(1))],
+                [new BlackBlock(new Pawn(1)), new WhiteBlock(new Pawn(1)),   new BlackBlock(new Pawn(1)),   new WhiteBlock(new Pawn(1)),  new BlackBlock(new Pawn(1)), new WhiteBlock(new Pawn(1)),   new BlackBlock(new Pawn(1)),   new WhiteBlock(new Pawn(1))],
+                [new WhiteBlock(),            new BlackBlock(),              new WhiteBlock(),              new BlackBlock(),             new WhiteBlock(),            new BlackBlock(),              new WhiteBlock(),              new BlackBlock()],
+                [new BlackBlock(),            new WhiteBlock(),              new BlackBlock(),              new WhiteBlock(),             new BlackBlock(),            new WhiteBlock(),              new BlackBlock(),              new WhiteBlock()],
+                [new WhiteBlock(),            new BlackBlock(),              new WhiteBlock(),              new BlackBlock(),             new WhiteBlock(),            new BlackBlock(),              new WhiteBlock(),              new BlackBlock()],
+                [new BlackBlock(),            new WhiteBlock(),              new BlackBlock(),              new WhiteBlock(),             new BlackBlock(),            new WhiteBlock(),              new BlackBlock(),              new WhiteBlock()],
+                [new WhiteBlock(new Pawn(0)), new BlackBlock(new Pawn(0)),   new WhiteBlock(new Pawn(0)),   new BlackBlock(new Pawn(0)),  new WhiteBlock(new Pawn(0)), new BlackBlock(new Pawn(0)),   new WhiteBlock(new Pawn(0)),   new BlackBlock(new Pawn(0))],
+                [new BlackBlock(new Rook(0)), new WhiteBlock(new Knight(0)), new BlackBlock(new Bishop(0)), new WhiteBlock(new Queen(0)), new BlackBlock(new King(0)), new WhiteBlock(new Bishop(0)), new BlackBlock(new Knight(0)), new WhiteBlock(new Rook(0))]
+            ]));
+        }
+    </script>
+    <body></body>
+    <link href="../css/chess.css" rel="stylesheet">
+    
+</html>
